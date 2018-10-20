@@ -1,1 +1,1 @@
-worker: python darkbot.py
+worker: python PuBg GuRu.py
