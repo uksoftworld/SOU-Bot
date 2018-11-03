@@ -1,1 +1,1 @@
-worker: python PuBg GuRu.py
+worker: python PuBgGuRu.py
