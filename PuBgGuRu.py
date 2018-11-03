@@ -62,7 +62,7 @@ async def on_member_join(member):
     embed.set_author(name='Welcome message')
     embed.add_field(name = '__Welcome to Our Server__',value ='**Hope you will be active here. Check Our server rules and never try to break any rules. ',inline = False)
     embed.set_image(url = 'https://media.giphy.com/media/OkJat1YNdoD3W/giphy.gif')
-    await client.send_message(member,embed=embed                                      
+    await client.send_message(member,embed=embed)                                      
     print("Sent message to " + member.name)
     r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
     embed = discord.Embed(title=f'Welcome {member.name} to {member.server.name}', description='Do not forget to check <#479717345783185426> and never try to break any one of them', color = discord.Color((r << 16) + (g << 8) + b))
