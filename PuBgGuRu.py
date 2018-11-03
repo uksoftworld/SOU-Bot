@@ -62,8 +62,8 @@ async def on_member_join(member):
     embed.set_author(name='Welcome message')
     embed.add_field(name = '__Welcome to Our Server__',value ='**Hope you will be active here. Check Our server rules and never try to break any rules. ',inline = False)
     embed.set_image(url = 'https://media.giphy.com/media/OkJat1YNdoD3W/giphy.gif')
-    await client.send_message(member,embed=embed)                                      
-    print("In our server" + member.name + " just joined")
+    await client.send_message(member,embed=embed                                      
+    print("Sent message to " + member.name)
     r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
     embed = discord.Embed(title=f'Welcome {member.name} to {member.server.name}', description='Do not forget to check <#479717345783185426> and never try to break any one of them', color = discord.Color((r << 16) + (g << 8) + b))
     embed.add_field(name='__Thanks for joining__', value='**Hope you will be active here.**', inline=True)
@@ -269,7 +269,7 @@ async def warn(ctx, userName: discord.User, *, message:str):
 @client.command(pass_context=True)
 async def ownerinfo(ctx):
     embed = discord.Embed(title="Information about owner", description="Bot Name- PuBg GuRu#3527", color=0x00ff00)
-    embed.set_footer(text="Copyright@PuBgGuRu")
+    embed.set_footer(text="Copyright@UK Soft")
     embed.set_author(name=" Bot Owner Name- |Sunny Singh|™✓#4856, PuBg GuRu#3527\nID:395535610548322326,435485523088506880")
     embed.add_field(name="Site-COMING SOON!!! ", value="THANKS!!!", inline=True)
     await client.say(embed=embed)
@@ -422,8 +422,6 @@ async def generalhelp(ctx):
     await client.send_message(author,embed=embed)
     await client.say('📨 Check DMs For Information')
 
-@client.command(pass_context=True)  
-@commands.has_permissions(kick_members=True)     
 @client.command(pass_context=True)  
 @commands.has_permissions(kick_members=True)     
 async def kick(ctx,user:discord.Member):
