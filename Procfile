@@ -1,1 +1,1 @@
-worker: python OfficialSOUŁ々Bot.py
+worker: python Bot.py
