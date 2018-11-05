@@ -270,7 +270,7 @@ async def warn(ctx, userName: discord.User, *, message:str):
 async def ownerinfo(ctx):
     embed = discord.Embed(title="Information about owner", description="Bot Name- Official SOUŁ々Bot", color=0x00ff00)
     embed.set_footer(text="Copyright@SOUŁ々Official ")
-    embed.set_author(name=" Bot Owner Name- |Sunny Singh|™✓#4856\nID:395535610548322326)
+    embed.set_author(name="Bot Owner Name- |Sunny Singh|™✓#4856\nID:395535610548322326")
     embed.add_field(name="Site-COMING SOON!!! ", value="THANKS!!!", inline=True)
     await client.say(embed=embed)
     
